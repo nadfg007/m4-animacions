@@ -1,0 +1,90 @@
+@-webkit-keyframes bHorizontal {
+  from {
+      left: 0;
+  }
+
+  to {
+      left: 550px;
+  }
+}
+
+@-webkit-keyframes bounce {
+
+  from,
+  to {
+      bottom: 0;
+      -webkit-animation-timing-function: ease-out;
+  }
+
+  50% {
+      bottom: 550px;
+      -webkit-animation-timing-function: ease-in;
+  }
+}
+
+
+@keyframes bHorizontal {
+  from {
+      left: 0;
+  }
+
+  to {
+      left: 550px;
+  }
+}
+
+@keyframes bounce {
+
+  from,
+  to {
+      bottom: 550px;
+      animation-timing-function: ease-in;
+  }
+
+  50% {
+      bottom: 0;
+      animation-timing-function: ease-out;
+  }
+}
+
+#bg {
+  position: relative;
+  margin: 5px;
+  width: 600px;
+  height: 600px;
+  border: 2px solid rgb(53, 53, 53);
+}
+
+
+
+#vertical {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background: rgb(133, 219, 2);
+
+  animation-direction: alternate;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  
+}
+
+#horizontal {
+  position: absolute;
+  width: 20px;
+  height: 600px;
+
+  animation-name: bHorizontal;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 3.6s;
+}
+
+  
+}
+
+
+
